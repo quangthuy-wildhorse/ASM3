@@ -1,0 +1,125 @@
+@media screen and (max-width: 600px) {
+  body {
+    line-height: 1;
+  }
+
+  header {
+    height: 60vh;
+  }
+
+  .banner {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #495057;
+    font-weight: bold;
+  }
+
+  .nav-1 {
+    background-color: #f1f3f569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(194, 191, 191, 0.222);
+  }
+
+  .name,
+  .name-personal,
+  .footer-text {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .target {
+    padding: 4em 2em;
+    background-color: rgba(229, 226, 226, 0.463);
+  }
+
+  .personal-info {
+    padding: 4em 2em;
+    background-color: var(--gray3);
+  }
+
+  .job-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  .header-job {
+    position: relative;
+  }
+
+  .job-content > ul > ul {
+    margin-bottom: 5em;
+  }
+
+  .certificate {
+    margin: 0;
+    width: 100%;
+    padding: 2em;
+  }
+
+  .row-1,
+  .row-2 {
+    grid-template-columns: 1fr;
+    box-shadow: none;
+    width: 100%;
+    margin: none;
+    border-bottom: none;
+  }
+
+  .card {
+    background-color: var(--gray3);
+    box-shadow: 0 0 20px var(--yellow1);
+    margin-top: 1em;
+    border: none;
+  }
+
+  .certificate-info {
+    border-bottom: 1px solid var(--yellow1);
+    box-shadow: none;
+    margin: none;
+  }
+
+  .row-1 img:nth-child(3) {
+    border-left: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .box {
+    box-shadow: 0 0 50px var(--yellow1);
+  }
+
+  .footer > ul {
+    gap: 10px;
+  }
+
+  .footer > ul > li > .icon-facebook,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 50px;
+  }
+}

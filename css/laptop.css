@@ -1,0 +1,462 @@
+/* font-size: 16px / 18px / 20px / 24px / 26px / 28px / 53px */
+:root {
+  --light-cyan5: #22b8cf;
+  --light-orange: #ffa94d;
+  --yellow1: #fff3bf;
+  --gray3: #dee2e6;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  height: 50vh;
+  width: 100%;
+
+  /* đặt nơi gán .banner */
+  position: relative;
+
+  /* tạo phông nền và tạo hiệu ứng làm mờ*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.107)),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Đưa text lồng vào background */
+.banner {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 53px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #495057;
+  font-weight: bold;
+}
+
+.nav-1 {
+  width: 100%;
+  background-color: #f1f3f569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(194, 191, 191, 0.222);
+  cursor: pointer;
+}
+
+/* tạo hiệu ứng khi di chuyển chuột tới */
+.nav-1:hover {
+  background-color: #a6754370;
+}
+
+/* cài đặt kiểu và màu cho Icon trên thanh Nav */
+.icon-user,
+.icon-doc-text-inv,
+.icon-mail-alt,
+.icon-star-1 {
+  /* đưa về 0 để sát lại trường text */
+  padding: 0;
+  color: blue;
+}
+
+.name {
+  display: inline-block;
+  font-size: 18px;
+  color: #adb5bd;
+
+  /* nơi gán ảnh đại diện */
+  position: relative;
+}
+
+/* đặt khoảng cách 2 bên của ảnh đại diện */
+.name:nth-child(3) {
+  margin: auto 70px;
+}
+
+/*  */
+.name-personal {
+  position: absolute;
+  background-image: url(../images/FB_IMG_1602469295685.jpg);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+
+article {
+  color: #495057;
+}
+
+.about {
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.target,
+.personal-info {
+  padding: 80px 30px 30px 30px;
+}
+
+.personal-info {
+  background-color: #e9ecef;
+}
+.personal-info > ul {
+  list-style: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  font-size: 26px;
+}
+
+p,
+.mt-40 {
+  font-size: 18px;
+}
+
+/* để chế độ in đậm đầu mục Thông tin cá nhân */
+span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* cài đặt kiểu và màu cho Icon trong mục Thông tin cá nhân */
+.icon {
+  padding-top: 25px;
+  gap: 12px;
+  display: flex;
+  color: blue;
+  font-size: 32px;
+}
+
+/* TẤT CẢ CÁC HỘP THÔNG TIN */
+.job-info {
+  width: 80%;
+  margin: 4em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  padding: 30px auto;
+  gap: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.time-line {
+  margin-bottom: 15px;
+}
+
+.job-content {
+  font-size: 12px;
+  margin-top: 20px;
+  border: 1px solid #adb5bd3d;
+  padding: 20px;
+  box-shadow: 20px 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  height: 100%;
+}
+
+.job-content > ul {
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.job-content > ul > ul {
+  list-style: none;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.job-content-header {
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-job {
+  position: relative;
+}
+
+.header-job::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--light-cyan5);
+  border-radius: 50%;
+  transform: translateY(0.4em);
+  left: -1em;
+}
+
+/* cài đặt màu và kiểu cho Icon tiêu đề các phần tử Grid */
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  color: #adb5bd;
+}
+
+.icon-like {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.icon-like > span {
+  font-size: 16px;
+}
+
+/* cài đặt kiểu và màu cho Icon trong mục Sở thích */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  color: #66d9e8;
+  font-size: 24px;
+  padding: 15px;
+  border: 1px solid #66d9e8;
+  border-radius: 50%;
+}
+
+/* tạo thanh đo trình độ Ngôn ngữ*/
+.line-blue > span {
+  background-color: blue;
+  display: inline-block;
+  width: 45px;
+  height: 8px;
+  border-radius: 9px;
+  margin: 8px 12px 20px auto;
+}
+
+/* cài màu cho từng loại trình độ */
+.line-blue:nth-child(2) > span:last-child {
+  background-color: #f1f3f5;
+}
+.line-blue:last-child > span:nth-child(2),
+.line-blue:last-child > span:last-child {
+  background-color: #f1f3f5;
+}
+
+/* tạo thanh đo trình độ Kỹ năng*/
+.line-blue-2 > span {
+  background-color: blue;
+  display: inline-block;
+  width: 45px;
+  height: 8px;
+  border-radius: 9px;
+  margin: 8px 12px 20px auto;
+}
+
+/* cài màu cho từng loại trình độ */
+.line-blue-2:nth-child(4) > span:last-child {
+  background-color: #f1f3f5;
+}
+.line-blue-2:nth-child(6) > span:last-child {
+  background-color: #f1f3f5;
+}
+.line-blue-2:nth-child(2) > span:last-child,
+.line-blue-2:nth-child(2) > span:nth-child(2) {
+  background-color: #f1f3f5;
+}
+.line-blue-2:nth-child(8) > span:last-child,
+.line-blue-2:nth-child(8) > span:nth-child(2) {
+  background-color: #f1f3f5;
+}
+
+/* Chứng chỉ - giải thưởng */
+.certificate-main {
+  background-color: #f1f3f5;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.certificate {
+  width: 100%;
+  padding-left: 60px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.row-1,
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  margin: 30px auto;
+}
+
+.row-1 {
+  padding-bottom: 20px;
+  border-bottom-width: 70%;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.certificate-info ul {
+  list-style: none;
+  font-size: 16px;
+  padding-top: 7px;
+}
+
+hr {
+  width: 66%;
+}
+
+/* Dự Án */
+.project {
+  padding: 40px 60px;
+}
+
+.project-main {
+  max-width: 100%;
+}
+
+/* tạo đổ bóng cho hộp thông tin */
+.box {
+  box-shadow: 0 0 15px rgba(0, 0, 0);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.box img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box-flex {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.time {
+  display: flex;
+  padding: 3px 10px;
+  background-color: #12bbd2;
+  color: #f1f3f5;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+
+.box-flex-items {
+  width: 65%;
+  align-self: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.text {
+  padding: 10px 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* đường kẻ dưới mỗi hàng và kiểu border */
+.table {
+  width: 90% !important;
+}
+
+tr:last-child {
+  border-bottom: hidden;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+/* FOOTER */
+.footer {
+  display: block;
+  font-size: 20px;
+  padding: 40px 0;
+  background-color: #f1f3f5;
+}
+
+.footer > ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.footer > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #343a409d;
+}
+
+.footer > ul > li > .icon-facebook,
+.icon-linkedin-circled,
+.icon-github-circled {
+  color: #12bbd2;
+  font-size: 25px;
+}
+
+/* Co nút điều hướng cho vừa với text */
+.btn {
+  height: max-content;
+}

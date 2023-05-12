@@ -1,0 +1,96 @@
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    line-height: 1;
+  }
+
+  header {
+    height: 60vh;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  /* ẩn ảnh và ô chứa nó */
+  .name,
+  .name-personal {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    row-gap: 5px;
+  }
+
+  nav .nav-1 {
+    padding: 1.5em;
+  }
+
+  .job-info {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    gap: 1em;
+    padding: 1em;
+    height: fit-content;
+  }
+
+  .job-content {
+    align-items: start;
+    height: fit-content;
+  }
+
+  .job-content > ul > ul {
+    padding-left: 0;
+  }
+
+  /* dịch chuyển để trình bày cho item gần sát nhau */
+  .job-content:nth-child(4) {
+    transform: translateY(-95%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .job-content:nth-child(6) {
+    transform: translateY(-85%);
+    height: max-content;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  footer,
+  .project,
+  .certificate-main {
+    transform: translateY(-170px);
+  }
+  /*  */
+
+  .ic-pencil,
+  .ic-telescope,
+  .ic-tool-2 {
+    font-size: 70px;
+  }
+
+  .row-1,
+  .row-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .project {
+    padding: 40px 10px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
