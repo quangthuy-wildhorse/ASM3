@@ -224,7 +224,7 @@ h3 {
 }
 
 /* cài đặt màu và kiểu cho Icon tiêu đề các phần tử Grid */
-.ic-toolbox,
+/* .ic-toolbox,
 .ic-pencil,
 .ic-telescope,
 .ic-mic,
@@ -233,6 +233,11 @@ h3 {
   padding: 0;
   font-size: 35px;
   color: #adb5bd;
+} */
+
+.icon-item {
+  border: 1px solid var(--light-cyan5);
+  border-radius: 50%;
 }
 
 .icon-like {
