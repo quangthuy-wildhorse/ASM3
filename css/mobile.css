@@ -109,17 +109,23 @@
     display: none;
   }
 
+  .project-main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
   .box {
     box-shadow: 0 0 50px var(--yellow1);
   }
 
+  .footer {
+    width: 100%;
+  }
   .footer > ul {
     gap: 10px;
   }
 
-  .footer > ul > li > .icon-facebook,
-  .icon-linkedin-circled,
-  .icon-github-circled {
+  .icon-footer {
     font-size: 50px;
   }
 }

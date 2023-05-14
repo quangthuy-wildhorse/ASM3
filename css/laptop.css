@@ -144,7 +144,6 @@ p,
 
 /* để chế độ in đậm đầu mục Thông tin cá nhân */
 span {
-  font-weight: bold;
   font-size: 18px;
 }
 
@@ -365,6 +364,8 @@ hr {
 }
 
 .project-main {
+  display: flex;
+  gap: 1em;
   max-width: 100%;
 }
 
@@ -400,15 +401,26 @@ hr {
   background-color: #12bbd2;
   color: #f1f3f5;
   border-radius: 20px;
-  margin-right: 5%;
+}
+
+.box-flex {
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+.set {
+  width: 70%;
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .box-flex-items {
-  width: 65%;
+  display: flex;
   align-self: start;
   justify-content: start;
-  flex-wrap: wrap;
-  gap: 10%;
 }
 
 .text {
@@ -454,11 +466,8 @@ td {
   color: #343a409d;
 }
 
-.footer > ul > li > .icon-facebook,
-.icon-linkedin-circled,
-.icon-github-circled {
+.icon-footer {
   color: #12bbd2;
-  font-size: 25px;
 }
 
 /* Co nút điều hướng cho vừa với text */
